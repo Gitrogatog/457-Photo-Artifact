@@ -15,6 +15,7 @@ public class RenderTextManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // texture.height = Screen.height;
+        // texture.width = Screen.width;
     }
 }
