@@ -7,6 +7,8 @@ public class CameraController : MonoBehaviour
 {
     public UnityEvent OnPhoto;
     //List of filters
+    [SerializeField] private Material[] _filterArray;
+    private int _filterIndex = 0;
     private float _currentFilterParam = 0f;
     [SerializeField] private float _paramDelta;
     // Start is called before the first frame update
