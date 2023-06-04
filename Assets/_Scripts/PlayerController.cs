@@ -90,34 +90,34 @@ public class PlayerController : MonoBehaviour
 		// Debug.Log(_movementInput);
 	}
 		
-		private void MovePlayer() {
-			// _controller.velocity += _movementInput * _currentSpeed;
-            Vector3 targetPos = _currentVelocity;
-            //Debug.Log("Velo " + _currentVelocity);
-            //Debug.Log("Pos: " + targetPos);
-            _controller.SimpleMove(targetPos);
-		}
+	private void MovePlayer() {
+		// _controller.velocity += _movementInput * _currentSpeed;
+		Vector3 targetPos = _currentVelocity;
+		//Debug.Log("Velo " + _currentVelocity);
+		//Debug.Log("Pos: " + targetPos);
+		_controller.SimpleMove(targetPos);
+	}
 
-		private void ApplyAirDrag() {
-			Vector3 velocity = _currentVelocity;
-			
-			Vector3 horizontal = new Vector3(velocity.x, 0f, velocity.z);
-			Vector3 vertical = new Vector3(0f, velocity.y, 0f);
+	private void ApplyAirDrag() {
+		Vector3 velocity = _currentVelocity;
+		
+		Vector3 horizontal = new Vector3(velocity.x, 0f, velocity.z);
+		Vector3 vertical = new Vector3(0f, velocity.y, 0f);
 
-			horizontal -= horizontal.normalized * (horizontal.magnitude * _horizontalDrag);
-			vertical -= vertical.normalized * (vertical.magnitude * _verticalDrag);
-			
-			_currentVelocity = horizontal + vertical;
-		}
+		horizontal -= horizontal.normalized * (horizontal.magnitude * _horizontalDrag);
+		vertical -= vertical.normalized * (vertical.magnitude * _verticalDrag);
+		
+		_currentVelocity = horizontal + vertical;
+	}
 		
 		
-		private void ApplyGravity() {
-			//if (_grounded) return;
-			_currentVelocity += Vector3.down * (_gravity * _gravityFactor);
-		}
+	private void ApplyGravity() {
+		//if (_grounded) return;
+		_currentVelocity += Vector3.down * (_gravity * _gravityFactor);
+	}
 
-		
-		private void HandleRunInput() {
-			_currentSpeed = Input.GetKey(KeyCode.LeftShift) ? _speedRun : _speed;
-		}
+	
+	private void HandleRunInput() {
+		_currentSpeed = Input.GetKey(KeyCode.LeftShift) ? _speedRun : _speed;
+	}
 }

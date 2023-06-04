@@ -1437,11 +1437,6 @@ PrefabInstance:
       propertyPath: m_TargetTexture
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 1170832641210758352, guid: 2827c02f7ef4f9d4582496195abac119,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1170832641210758362, guid: 2827c02f7ef4f9d4582496195abac119,
         type: 3}
       propertyPath: m_Name
@@ -1502,16 +1497,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1170832641210758366, guid: 2827c02f7ef4f9d4582496195abac119,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1170832641210758367, guid: 2827c02f7ef4f9d4582496195abac119,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6395506487299335654, guid: 2827c02f7ef4f9d4582496195abac119,
         type: 3}
       propertyPath: rend
@@ -1522,10 +1507,7 @@ PrefabInstance:
       propertyPath: OnPhoto.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1013889076}
-    m_RemovedComponents:
-    - {fileID: 1170832641210758366, guid: 2827c02f7ef4f9d4582496195abac119, type: 3}
-    - {fileID: 1170832641210758352, guid: 2827c02f7ef4f9d4582496195abac119, type: 3}
-    - {fileID: 1170832641210758367, guid: 2827c02f7ef4f9d4582496195abac119, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2827c02f7ef4f9d4582496195abac119, type: 3}
 --- !u!82 &1013889076 stripped
 AudioSource:

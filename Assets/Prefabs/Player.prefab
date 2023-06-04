@@ -510,9 +510,7 @@ GameObject:
   - component: {fileID: 1170832641210758365}
   - component: {fileID: 1170832641210758364}
   - component: {fileID: 1170832641210758363}
-  - component: {fileID: 1170832641210758366}
-  - component: {fileID: 1170832641210758352}
-  - component: {fileID: 1170832641210758367}
+  - component: {fileID: 8511742432419943743}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -580,7 +578,7 @@ MonoBehaviour:
   rotationSmoothTime: 0.05
   smoothMoveTime: 0.1
   hangTime: 1
---- !u!114 &1170832641210758366
+--- !u!114 &8511742432419943743
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -589,53 +587,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1170832641210758362}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 347d9018401ec7649a8680f4d50e6d9a, type: 3}
+  m_Script: {fileID: 11500000, guid: e8d38d91602840049bac624aff55f88d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  texture: {fileID: 8400000, guid: 4e4e4adcbe9be3a478780ac4cdbb62c5, type: 2}
---- !u!114 &1170832641210758352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1170832641210758362}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f34837f3865deae42b5cadd16332f6e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _frame: {fileID: 1170832639608034217}
-  _maxPhotos: 5
---- !u!114 &1170832641210758367
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1170832641210758362}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93c1ae06f81e63742a08381fffc3cdae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnPhoto:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1170832641210758352}
-        m_TargetAssemblyTypeName: ImageSaver, Assembly-CSharp
-        m_MethodName: SaveImage
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _paramDelta: 0
-  screenshotKey: 0
+  _footstepSounds:
+  - {fileID: 8300000, guid: 7843f71023bd5e5489845b3113a5d024, type: 3}
+  - {fileID: 8300000, guid: 15802aabca4f24744b7bdae58d66bb25, type: 3}
+  - {fileID: 8300000, guid: b96833cd9eb6c4b409acc3755338065c, type: 3}
+  - {fileID: 8300000, guid: 498a416f2d497dc4689d9571d06e16d0, type: 3}
+  - {fileID: 8300000, guid: b929fb9e21f9b954eb4c67aea063b42b, type: 3}
+  _volume: 0.3
+  _distanceBtwnSteps: 2.5
+  _resetStepTime: 0.2
 --- !u!1 &1170832641336565972
 GameObject:
   m_ObjectHideFlags: 0
