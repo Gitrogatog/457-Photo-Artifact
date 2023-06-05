@@ -1529,12 +1529,6 @@ PrefabInstance:
       objectReference: {fileID: 1013889076}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2827c02f7ef4f9d4582496195abac119, type: 3}
---- !u!82 &1013889076 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 4982859441404858888, guid: 2827c02f7ef4f9d4582496195abac119,
-    type: 3}
-  m_PrefabInstance: {fileID: 1013889070}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1025764769 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4272134326793482, guid: 92fb9a2c2be02e84ba1cf8da1f44abb1,
