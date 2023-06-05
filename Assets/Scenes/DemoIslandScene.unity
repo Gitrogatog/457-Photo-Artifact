@@ -1432,11 +1432,6 @@ PrefabInstance:
       propertyPath: m_CameraType
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1170832641052802417, guid: 2827c02f7ef4f9d4582496195abac119,
-        type: 3}
-      propertyPath: m_TargetTexture
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 1170832641210758362, guid: 2827c02f7ef4f9d4582496195abac119,
         type: 3}
       propertyPath: m_Name
@@ -1502,19 +1497,8 @@ PrefabInstance:
       propertyPath: rend
       value: 
       objectReference: {fileID: 8400000, guid: 4e4e4adcbe9be3a478780ac4cdbb62c5, type: 2}
-    - target: {fileID: 8325588389250456902, guid: 2827c02f7ef4f9d4582496195abac119,
-        type: 3}
-      propertyPath: OnPhoto.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 1013889076}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2827c02f7ef4f9d4582496195abac119, type: 3}
---- !u!82 &1013889076 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 4982859441404858888, guid: 2827c02f7ef4f9d4582496195abac119,
-    type: 3}
-  m_PrefabInstance: {fileID: 1013889070}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1025764769 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4272134326793482, guid: 92fb9a2c2be02e84ba1cf8da1f44abb1,
