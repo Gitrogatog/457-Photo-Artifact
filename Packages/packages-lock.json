@@ -7,6 +7,14 @@
       "dependencies": {},
       "hash": "751e97de92157f21ee184377188c71aed5c6de92"
     },
+    "com.jimmycushnie.noisynodes": {
+      "version": "file:Noisy-Nodes-master",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.unity.shadergraph": "7.1.8"
+      }
+    },
     "com.unity.burst": {
       "version": "1.8.4",
       "depth": 1,
