@@ -21,7 +21,7 @@ public class CameraCapture : MonoBehaviour
 
     private void Awake(){
         //rend.format = RenderTextureFormat.ARGB32;
-        rend = new RenderTexture(Screen.width, Screen.height, 32, RenderTextureFormat.ARGB32);
+        rend = new RenderTexture(300, 169, 32, RenderTextureFormat.ARGB32);
     }
  
     private void LateUpdate()

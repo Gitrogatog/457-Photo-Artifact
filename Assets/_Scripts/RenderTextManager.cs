@@ -8,8 +8,8 @@ public class RenderTextManager : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        texture.height = Screen.height;
-        texture.width = Screen.width;
+        texture.height = 112;
+        texture.width = 200;
     }
 
     // Update is called once per frame
