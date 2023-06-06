@@ -32,50 +32,38 @@ public class PlayerController : MonoBehaviour
     public static Vector3 CAMERA_POSITION;
     void Awake(){
         Cursor.lockState = _hideCursor ? CursorLockMode.Locked : CursorLockMode.None;
-		// Quaternion.Euler(0, transform.eulerAngles.y, 0);
     }
     protected void Update() {
 		HandleCameraInput();
 		HandleMovementInput();
-		// HandleJumpInput();
 		HandleRunInput();
-
-		// ResetCamera();
-		// MoveCamera();
 		CAMERA_POSITION = _cameraHolder.position;
 	}
 	
 	private void FixedUpdate() {
 		_currentVelocity = _movementInput * _currentSpeed;
-		// Debug.Log("input " + _movementInput);
-		// Debug.Log("velo " + _currentVelocity);
 		ApplyAirDrag();
 		ApplyGravity();
 		MovePlayer();
 		RotateCamera();
-		// ApplyJump();
 	}
 
 	protected void LateUpdate() {
-		if(Input.GetKeyDown(KeyCode.Backspace)){
-			transform.position = transform.position + new Vector3(0, 0, 10);
-			Debug.Log("Hello Tele");
-		}
+		if (Input.GetKey("escape"))
+        {
+            Application.Quit();
+        }
 	}
 
-	private void RotateCamera() {
-		// float t = 0.95f;
-		
+	private void RotateCamera() {		
 		_cameraHolder.transform.localRotation = Quaternion.Euler(smoothPitch, 0, 0);
 		transform.rotation *= Quaternion.Euler(0, smoothYaw, 0);
-		// _cameraHolder.rotation = Quaternion.Slerp(_cameraHolder.rotation, Quaternion.Euler(_cameraInput.x, _cameraInput.y, 0f), t * Time.deltaTime);
 	}
 	
 	private void HandleCameraInput() {
 		_cameraInput.x = Input.GetAxis("Mouse X") * _lookSensitivity;
 		_cameraInput.y = Input.GetAxis("Mouse Y") * _lookSensitivity;
 		
-		// _cameraInput.x = Mathf.Clamp(_cameraInput.x, -90f, 90f);
 		rotationX -= _cameraInput.y;
 		rotationX = Mathf.Clamp(rotationX, -75f, 75f);
 
@@ -87,14 +75,10 @@ public class PlayerController : MonoBehaviour
 		Vector3 forward =  Vector3.ProjectOnPlane(_cameraHolder.forward, Vector3.up) * Input.GetAxisRaw("Vertical");
 		Vector3 right = _cameraHolder.right * Input.GetAxisRaw("Horizontal");
 		_movementInput = (forward + right).normalized;
-		// Debug.Log(_movementInput);
 	}
 		
 	private void MovePlayer() {
-		// _controller.velocity += _movementInput * _currentSpeed;
 		Vector3 targetPos = _currentVelocity;
-		//Debug.Log("Velo " + _currentVelocity);
-		//Debug.Log("Pos: " + targetPos);
 		_controller.SimpleMove(targetPos);
 	}
 
@@ -112,7 +96,6 @@ public class PlayerController : MonoBehaviour
 		
 		
 	private void ApplyGravity() {
-		//if (_grounded) return;
 		_currentVelocity += Vector3.down * (_gravity * _gravityFactor);
 	}
 
