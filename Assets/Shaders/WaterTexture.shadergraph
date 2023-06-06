@@ -1112,7 +1112,7 @@
         "m_Position": {
             "serializedVersion": "2",
             "x": 461.00006103515627,
-            "y": 1254.0,
+            "y": 1256.0,
             "width": 208.0,
             "height": 104.0
         }
@@ -1143,7 +1143,7 @@
             "x": 0.0,
             "y": 0.5882353782653809,
             "z": 1.0,
-            "w": 0.885297954082489
+            "w": 0.5617609024047852
         },
         {
             "x": 0.9716981053352356,
@@ -3182,7 +3182,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "Metallic",
     "m_StageCapability": 2,
-    "m_Value": 0.0,
+    "m_Value": 1.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
 }
