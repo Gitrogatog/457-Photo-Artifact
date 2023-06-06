@@ -8,6 +8,6 @@ public class MoveCrystal : MonoBehaviour
     void Update()
     {
         transform.Rotate(0.0f, 0.0f, Time.deltaTime * 10.0f);
-        transform.Translate(0.001f * Vector3.forward * Mathf.Sin(Time.realtimeSinceStartup));
+        transform.Translate(0.01f * Vector3.forward * Mathf.Sin(Time.realtimeSinceStartup));
     }
 }
