@@ -597,7 +597,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 498a416f2d497dc4689d9571d06e16d0, type: 3}
   - {fileID: 8300000, guid: b929fb9e21f9b954eb4c67aea063b42b, type: 3}
   _volume: 0.3
-  _distanceBtwnSteps: 2.5
+  _distanceBtwnSteps: 2.25
   _resetStepTime: 0.2
 --- !u!1 &1170832641336565972
 GameObject:
